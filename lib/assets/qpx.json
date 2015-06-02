@@ -1,0 +1,1349 @@
+{
+ "kind": "qpxExpress#tripsSearch",
+ "trips": {
+  "kind": "qpxexpress#tripOptions",
+  "requestId": "nc057T2PgWYVfcPVl0MCa0",
+  "data": {
+   "kind": "qpxexpress#data",
+   "airport": [
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "JFK",
+     "city": "NYC",
+     "name": "New York John F Kennedy International"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "LGA",
+     "city": "NYC",
+     "name": "New York La Guardia"
+    },
+    {
+     "kind": "qpxexpress#airportData",
+     "code": "ORD",
+     "city": "CHI",
+     "name": "Chicago O'Hare"
+    }
+   ],
+   "city": [
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "CHI",
+     "name": "Chicago"
+    },
+    {
+     "kind": "qpxexpress#cityData",
+     "code": "NYC",
+     "name": "New York"
+    }
+   ],
+   "aircraft": [
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "319",
+     "name": "Airbus A319"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "320",
+     "name": "Airbus A320"
+    },
+    {
+     "kind": "qpxexpress#aircraftData",
+     "code": "E90",
+     "name": "Embraer RJ-190"
+    }
+   ],
+   "tax": [
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "ZP",
+     "name": "US Flight Segment Tax"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "XF",
+     "name": "US Passenger Facility Charge"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "US_001",
+     "name": "US Transportation Tax"
+    },
+    {
+     "kind": "qpxexpress#taxData",
+     "id": "AY_001",
+     "name": "US September 11th Security Fee"
+    }
+   ],
+   "carrier": [
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "B6",
+     "name": "Jetblue Airways Corporation"
+    },
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "NK",
+     "name": "Spirit Airlines"
+    },
+    {
+     "kind": "qpxexpress#carrierData",
+     "code": "UA",
+     "name": "United Airlines, Inc."
+    }
+   ]
+  },
+  "tripOption": [
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD276.20",
+    "id": "Rv1VXNGB7V4SlxPofLbOg4002",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 130,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 130,
+        "flight": {
+         "carrier": "NK",
+         "number": "630"
+        },
+        "id": "G+rPzer2hRGXMuOQ",
+        "cabin": "COACH",
+        "bookingCode": "V",
+        "bookingCodeCount": 4,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LVH4v19RkFcgollD",
+          "aircraft": "320",
+          "arrivalTime": "2015-06-05T21:09-04:00",
+          "departureTime": "2015-06-05T17:59-05:00",
+          "origin": "ORD",
+          "destination": "LGA",
+          "originTerminal": "3",
+          "destinationTerminal": "B",
+          "duration": 130,
+          "onTimePerformance": 50,
+          "mileage": 731,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 149,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 149,
+        "flight": {
+         "carrier": "NK",
+         "number": "847"
+        },
+        "id": "GVvj+aCzLpU5EW9v",
+        "cabin": "COACH",
+        "bookingCode": "V",
+        "bookingCodeCount": 4,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LAH4JKcB1HoaC+-w",
+          "aircraft": "320",
+          "arrivalTime": "2015-06-07T10:04-05:00",
+          "departureTime": "2015-06-07T08:35-04:00",
+          "origin": "LGA",
+          "destination": "ORD",
+          "originTerminal": "B",
+          "destinationTerminal": "3",
+          "duration": 149,
+          "onTimePerformance": 80,
+          "mileage": 731,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AbnI0JgjXybQ8SvU7alQjSohaE+mh/ye+mXCcLj4rn/s",
+        "carrier": "NK",
+        "origin": "CHI",
+        "destination": "NYC",
+        "basisCode": "V7Z3NR"
+       },
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AbnI0JgjXybQ8SvU7alQjSohaE+mh/ye+mXCcLj4rn/s",
+        "carrier": "NK",
+        "origin": "NYC",
+        "destination": "CHI",
+        "basisCode": "V7Z3NR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AbnI0JgjXybQ8SvU7alQjSohaE+mh/ye+mXCcLj4rn/s",
+        "segmentId": "G+rPzer2hRGXMuOQ",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "kilos": 0,
+          "pieces": 0,
+          "pounds": 0
+         }
+        ]
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AbnI0JgjXybQ8SvU7alQjSohaE+mh/ye+mXCcLj4rn/s",
+        "segmentId": "GVvj+aCzLpU5EW9v",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "kilos": 0,
+          "pieces": 0,
+          "pounds": 0
+         }
+        ]
+       }
+      ],
+      "baseFareTotal": "USD230.68",
+      "saleFareTotal": "USD230.68",
+      "saleTaxTotal": "USD45.52",
+      "saleTotal": "USD276.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD17.32"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD11.20"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.00"
+       }
+      ],
+      "fareCalculation": "CHI NK NYC Q18.60 Q4.65 92.09V7Z3NR NK CHI Q18.60 Q4.65 92.09V7Z3NR USD 230.68 END ZP ORD LGA XT 17.32US 8.00ZP 11.20AY 9.00XF ORD4.50 LGA4.50",
+      "latestTicketingTime": "2015-05-28T15:56-04:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD276.20",
+    "id": "Rv1VXNGB7V4SlxPofLbOg4001",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 127,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 127,
+        "flight": {
+         "carrier": "NK",
+         "number": "224"
+        },
+        "id": "GM+h64jgeQQeIjsI",
+        "cabin": "COACH",
+        "bookingCode": "V",
+        "bookingCodeCount": 4,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LEgMooErjHjxp5QQ",
+          "aircraft": "320",
+          "arrivalTime": "2015-06-05T09:00-04:00",
+          "departureTime": "2015-06-05T05:53-05:00",
+          "origin": "ORD",
+          "destination": "LGA",
+          "originTerminal": "3",
+          "destinationTerminal": "B",
+          "duration": 127,
+          "onTimePerformance": 90,
+          "mileage": 731,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 149,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 149,
+        "flight": {
+         "carrier": "NK",
+         "number": "847"
+        },
+        "id": "GVvj+aCzLpU5EW9v",
+        "cabin": "COACH",
+        "bookingCode": "V",
+        "bookingCodeCount": 4,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LAH4JKcB1HoaC+-w",
+          "aircraft": "320",
+          "arrivalTime": "2015-06-07T10:04-05:00",
+          "departureTime": "2015-06-07T08:35-04:00",
+          "origin": "LGA",
+          "destination": "ORD",
+          "originTerminal": "B",
+          "destinationTerminal": "3",
+          "duration": 149,
+          "onTimePerformance": 80,
+          "mileage": 731,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AbnI0JgjXybQ8SvU7alQjSohaE+mh/ye+mXCcLj4rn/s",
+        "carrier": "NK",
+        "origin": "CHI",
+        "destination": "NYC",
+        "basisCode": "V7Z3NR"
+       },
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AbnI0JgjXybQ8SvU7alQjSohaE+mh/ye+mXCcLj4rn/s",
+        "carrier": "NK",
+        "origin": "NYC",
+        "destination": "CHI",
+        "basisCode": "V7Z3NR"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AbnI0JgjXybQ8SvU7alQjSohaE+mh/ye+mXCcLj4rn/s",
+        "segmentId": "GM+h64jgeQQeIjsI",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "kilos": 0,
+          "pieces": 0,
+          "pounds": 0
+         }
+        ]
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AbnI0JgjXybQ8SvU7alQjSohaE+mh/ye+mXCcLj4rn/s",
+        "segmentId": "GVvj+aCzLpU5EW9v",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "kilos": 0,
+          "pieces": 0,
+          "pounds": 0
+         }
+        ]
+       }
+      ],
+      "baseFareTotal": "USD230.68",
+      "saleFareTotal": "USD230.68",
+      "saleTaxTotal": "USD45.52",
+      "saleTotal": "USD276.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD17.32"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD11.20"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.00"
+       }
+      ],
+      "fareCalculation": "CHI NK NYC Q18.60 Q4.65 92.09V7Z3NR NK CHI Q18.60 Q4.65 92.09V7Z3NR USD 230.68 END ZP ORD LGA XT 17.32US 8.00ZP 11.20AY 9.00XF ORD4.50 LGA4.50",
+      "latestTicketingTime": "2015-05-28T15:56-04:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD310.20",
+    "id": "Rv1VXNGB7V4SlxPofLbOg4003",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 130,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 130,
+        "flight": {
+         "carrier": "B6",
+         "number": "106"
+        },
+        "id": "Gbgse9mYV9nplklX",
+        "cabin": "COACH",
+        "bookingCode": "M",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "L4uIMPCFSLzzPCv+",
+          "aircraft": "E90",
+          "arrivalTime": "2015-06-05T09:10-04:00",
+          "departureTime": "2015-06-05T06:00-05:00",
+          "origin": "ORD",
+          "destination": "JFK",
+          "originTerminal": "3",
+          "destinationTerminal": "5",
+          "duration": 130,
+          "mileage": 737,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 150,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 150,
+        "flight": {
+         "carrier": "B6",
+         "number": "905"
+        },
+        "id": "GUpZM16exeJ+3mmO",
+        "cabin": "COACH",
+        "bookingCode": "M",
+        "bookingCodeCount": 7,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LeyOoRQ0sK5VJHCF",
+          "aircraft": "320",
+          "arrivalTime": "2015-06-07T08:00-05:00",
+          "departureTime": "2015-06-07T06:30-04:00",
+          "origin": "JFK",
+          "destination": "ORD",
+          "originTerminal": "5",
+          "destinationTerminal": "3",
+          "duration": 150,
+          "mileage": 737,
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "Atqz4eo90WWcP7af2Mkf/ufA5lHYhefawJ9yuncRq29c",
+        "carrier": "B6",
+        "origin": "CHI",
+        "destination": "NYC",
+        "basisCode": "MI07AE2C"
+       },
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "Atqz4eo90WWcP7af2Mkf/ufA5lHYhefawJ9yuncRq29c",
+        "carrier": "B6",
+        "origin": "NYC",
+        "destination": "CHI",
+        "basisCode": "MI07AE2C"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "Atqz4eo90WWcP7af2Mkf/ufA5lHYhefawJ9yuncRq29c",
+        "segmentId": "GUpZM16exeJ+3mmO",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "bagDescriptor": [
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "UPTO50LB 23KG AND62LI 158LCM",
+            "count": 1,
+            "description": [
+             "Up to 50 lb/23 kg",
+             "Up to 62 li/158 lcm"
+            ],
+            "subcode": "0GO"
+           }
+          ],
+          "pieces": 1
+         }
+        ]
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "Atqz4eo90WWcP7af2Mkf/ufA5lHYhefawJ9yuncRq29c",
+        "segmentId": "Gbgse9mYV9nplklX",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "bagDescriptor": [
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "UPTO50LB 23KG AND62LI 158LCM",
+            "count": 1,
+            "description": [
+             "Up to 50 lb/23 kg",
+             "Up to 62 li/158 lcm"
+            ],
+            "subcode": "0GO"
+           }
+          ],
+          "pieces": 1
+         }
+        ]
+       }
+      ],
+      "baseFareTotal": "USD262.32",
+      "saleFareTotal": "USD262.32",
+      "saleTaxTotal": "USD47.88",
+      "saleTotal": "USD310.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD19.68"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD11.20"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.00"
+       }
+      ],
+      "fareCalculation": "CHI B6 JFK 131.16MI07AE2C B6 CHI 131.16MI07AE2C USD 262.32 END ZP ORD JFK XT 19.68US 8.00ZP 11.20AY 9.00XF ORD4.50 JFK4.50",
+      "latestTicketingTime": "2015-05-28T23:59-04:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD310.20",
+    "id": "Rv1VXNGB7V4SlxPofLbOg4005",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 134,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 134,
+        "flight": {
+         "carrier": "UA",
+         "number": "672"
+        },
+        "id": "GGw4+skxGpfKAzyK",
+        "cabin": "COACH",
+        "bookingCode": "T",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LORs-FM1M-hti8wb",
+          "aircraft": "320",
+          "arrivalTime": "2015-06-05T11:14-04:00",
+          "departureTime": "2015-06-05T08:00-05:00",
+          "origin": "ORD",
+          "destination": "LGA",
+          "originTerminal": "1",
+          "destinationTerminal": "B",
+          "duration": 134,
+          "onTimePerformance": 70,
+          "mileage": 731,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 147,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 147,
+        "flight": {
+         "carrier": "UA",
+         "number": "761"
+        },
+        "id": "GtQcz-DehwEQBNQQ",
+        "cabin": "COACH",
+        "bookingCode": "T",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LCv7wepfHVBrUI7n",
+          "aircraft": "319",
+          "arrivalTime": "2015-06-07T07:27-05:00",
+          "departureTime": "2015-06-07T06:00-04:00",
+          "origin": "LGA",
+          "destination": "ORD",
+          "originTerminal": "B",
+          "destinationTerminal": "1",
+          "duration": 147,
+          "onTimePerformance": 70,
+          "mileage": 731,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AVxRlhrm2GKpo3wVH5aGMCNC3tT7UNENUOi1aA9ZWyuM",
+        "carrier": "UA",
+        "origin": "CHI",
+        "destination": "NYC",
+        "basisCode": "TAA07AKN"
+       },
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AVxRlhrm2GKpo3wVH5aGMCNC3tT7UNENUOi1aA9ZWyuM",
+        "carrier": "UA",
+        "origin": "NYC",
+        "destination": "CHI",
+        "basisCode": "TAA07AKN"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AVxRlhrm2GKpo3wVH5aGMCNC3tT7UNENUOi1aA9ZWyuM",
+        "segmentId": "GGw4+skxGpfKAzyK",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "bagDescriptor": [
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "UPTO50LB 23KG AND62LI 158LCM",
+            "count": 0,
+            "description": [
+             "Up to 50 lb/23 kg",
+             "Up to 62 li/158 lcm"
+            ],
+            "subcode": "0GO"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "MUSICAL INSTRUMENTS",
+            "count": 0,
+            "subcode": "0F2"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "ARCHERY EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Archery Equipment"
+            ],
+            "subcode": "0FO"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "BOWLING EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Bowling Equipment"
+            ],
+            "subcode": "0FS"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "FISHING EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Fishing Equipment"
+            ],
+            "subcode": "0D6"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "GOLF EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Golf Equipment"
+            ],
+            "subcode": "0DC"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "HOCKEY EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Hockey Equipment"
+            ],
+            "subcode": "0F0"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "SKATEBOARD",
+            "count": 0,
+            "description": [
+             "Skateboard"
+            ],
+            "subcode": "0IS"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "SKI EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Ski Equipment"
+            ],
+            "subcode": "0DD"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "WATER SKI EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Water Ski Equipment"
+            ],
+            "subcode": "0G2"
+           }
+          ],
+          "pieces": 0
+         }
+        ]
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AVxRlhrm2GKpo3wVH5aGMCNC3tT7UNENUOi1aA9ZWyuM",
+        "segmentId": "GtQcz-DehwEQBNQQ",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "bagDescriptor": [
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "UPTO50LB 23KG AND62LI 158LCM",
+            "count": 0,
+            "description": [
+             "Up to 50 lb/23 kg",
+             "Up to 62 li/158 lcm"
+            ],
+            "subcode": "0GO"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "MUSICAL INSTRUMENTS",
+            "count": 0,
+            "subcode": "0F2"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "ARCHERY EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Archery Equipment"
+            ],
+            "subcode": "0FO"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "BOWLING EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Bowling Equipment"
+            ],
+            "subcode": "0FS"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "FISHING EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Fishing Equipment"
+            ],
+            "subcode": "0D6"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "GOLF EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Golf Equipment"
+            ],
+            "subcode": "0DC"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "HOCKEY EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Hockey Equipment"
+            ],
+            "subcode": "0F0"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "SKATEBOARD",
+            "count": 0,
+            "description": [
+             "Skateboard"
+            ],
+            "subcode": "0IS"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "SKI EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Ski Equipment"
+            ],
+            "subcode": "0DD"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "WATER SKI EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Water Ski Equipment"
+            ],
+            "subcode": "0G2"
+           }
+          ],
+          "pieces": 0
+         }
+        ]
+       }
+      ],
+      "baseFareTotal": "USD262.32",
+      "saleFareTotal": "USD262.32",
+      "saleTaxTotal": "USD47.88",
+      "saleTotal": "USD310.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD19.68"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD11.20"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.00"
+       }
+      ],
+      "fareCalculation": "CHI UA NYC 131.16TAA07AKN UA CHI 131.16TAA07AKN USD 262.32 END ZP ORD LGA XT 19.68US 8.00ZP 11.20AY 9.00XF ORD4.50 LGA4.50",
+      "latestTicketingTime": "2015-05-28T23:59-04:00",
+      "ptc": "ADT"
+     }
+    ]
+   },
+   {
+    "kind": "qpxexpress#tripOption",
+    "saleTotal": "USD310.20",
+    "id": "Rv1VXNGB7V4SlxPofLbOg4004",
+    "slice": [
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 134,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 134,
+        "flight": {
+         "carrier": "UA",
+         "number": "462"
+        },
+        "id": "GoDS-ejLmZOHKXu3",
+        "cabin": "COACH",
+        "bookingCode": "T",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "0",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "Le1k4p40zGgpOMQE",
+          "aircraft": "319",
+          "arrivalTime": "2015-06-05T09:21-04:00",
+          "departureTime": "2015-06-05T06:07-05:00",
+          "origin": "ORD",
+          "destination": "LGA",
+          "originTerminal": "1",
+          "destinationTerminal": "B",
+          "duration": 134,
+          "onTimePerformance": 90,
+          "mileage": 731,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "kind": "qpxexpress#sliceInfo",
+      "duration": 147,
+      "segment": [
+       {
+        "kind": "qpxexpress#segmentInfo",
+        "duration": 147,
+        "flight": {
+         "carrier": "UA",
+         "number": "761"
+        },
+        "id": "GtQcz-DehwEQBNQQ",
+        "cabin": "COACH",
+        "bookingCode": "T",
+        "bookingCodeCount": 9,
+        "marriedSegmentGroup": "1",
+        "leg": [
+         {
+          "kind": "qpxexpress#legInfo",
+          "id": "LCv7wepfHVBrUI7n",
+          "aircraft": "319",
+          "arrivalTime": "2015-06-07T07:27-05:00",
+          "departureTime": "2015-06-07T06:00-04:00",
+          "origin": "LGA",
+          "destination": "ORD",
+          "originTerminal": "B",
+          "destinationTerminal": "1",
+          "duration": 147,
+          "onTimePerformance": 70,
+          "mileage": 731,
+          "meal": "Food and Beverages for Purchase",
+          "secure": true
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "pricing": [
+     {
+      "kind": "qpxexpress#pricingInfo",
+      "fare": [
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AVxRlhrm2GKpo3wVH5aGMCNC3tT7UNENUOi1aA9ZWyuM",
+        "carrier": "UA",
+        "origin": "CHI",
+        "destination": "NYC",
+        "basisCode": "TAA07AKN"
+       },
+       {
+        "kind": "qpxexpress#fareInfo",
+        "id": "AVxRlhrm2GKpo3wVH5aGMCNC3tT7UNENUOi1aA9ZWyuM",
+        "carrier": "UA",
+        "origin": "NYC",
+        "destination": "CHI",
+        "basisCode": "TAA07AKN"
+       }
+      ],
+      "segmentPricing": [
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AVxRlhrm2GKpo3wVH5aGMCNC3tT7UNENUOi1aA9ZWyuM",
+        "segmentId": "GoDS-ejLmZOHKXu3",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "bagDescriptor": [
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "UPTO50LB 23KG AND62LI 158LCM",
+            "count": 0,
+            "description": [
+             "Up to 50 lb/23 kg",
+             "Up to 62 li/158 lcm"
+            ],
+            "subcode": "0GO"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "MUSICAL INSTRUMENTS",
+            "count": 0,
+            "subcode": "0F2"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "ARCHERY EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Archery Equipment"
+            ],
+            "subcode": "0FO"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "BOWLING EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Bowling Equipment"
+            ],
+            "subcode": "0FS"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "FISHING EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Fishing Equipment"
+            ],
+            "subcode": "0D6"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "GOLF EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Golf Equipment"
+            ],
+            "subcode": "0DC"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "HOCKEY EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Hockey Equipment"
+            ],
+            "subcode": "0F0"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "SKATEBOARD",
+            "count": 0,
+            "description": [
+             "Skateboard"
+            ],
+            "subcode": "0IS"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "SKI EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Ski Equipment"
+            ],
+            "subcode": "0DD"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "WATER SKI EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Water Ski Equipment"
+            ],
+            "subcode": "0G2"
+           }
+          ],
+          "pieces": 0
+         }
+        ]
+       },
+       {
+        "kind": "qpxexpress#segmentPricing",
+        "fareId": "AVxRlhrm2GKpo3wVH5aGMCNC3tT7UNENUOi1aA9ZWyuM",
+        "segmentId": "GtQcz-DehwEQBNQQ",
+        "freeBaggageOption": [
+         {
+          "kind": "qpxexpress#freeBaggageAllowance",
+          "bagDescriptor": [
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "UPTO50LB 23KG AND62LI 158LCM",
+            "count": 0,
+            "description": [
+             "Up to 50 lb/23 kg",
+             "Up to 62 li/158 lcm"
+            ],
+            "subcode": "0GO"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "MUSICAL INSTRUMENTS",
+            "count": 0,
+            "subcode": "0F2"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "ARCHERY EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Archery Equipment"
+            ],
+            "subcode": "0FO"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "BOWLING EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Bowling Equipment"
+            ],
+            "subcode": "0FS"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "FISHING EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Fishing Equipment"
+            ],
+            "subcode": "0D6"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "GOLF EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Golf Equipment"
+            ],
+            "subcode": "0DC"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "HOCKEY EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Hockey Equipment"
+            ],
+            "subcode": "0F0"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "SKATEBOARD",
+            "count": 0,
+            "description": [
+             "Skateboard"
+            ],
+            "subcode": "0IS"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "SKI EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Ski Equipment"
+            ],
+            "subcode": "0DD"
+           },
+           {
+            "kind": "qpxexpress#bagDescriptor",
+            "commercialName": "WATER SKI EQUIPMENT",
+            "count": 0,
+            "description": [
+             "Water Ski Equipment"
+            ],
+            "subcode": "0G2"
+           }
+          ],
+          "pieces": 0
+         }
+        ]
+       }
+      ],
+      "baseFareTotal": "USD262.32",
+      "saleFareTotal": "USD262.32",
+      "saleTaxTotal": "USD47.88",
+      "saleTotal": "USD310.20",
+      "passengers": {
+       "kind": "qpxexpress#passengerCounts",
+       "adultCount": 1
+      },
+      "tax": [
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "US_001",
+        "chargeType": "GOVERNMENT",
+        "code": "US",
+        "country": "US",
+        "salePrice": "USD19.68"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "AY_001",
+        "chargeType": "GOVERNMENT",
+        "code": "AY",
+        "country": "US",
+        "salePrice": "USD11.20"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "XF",
+        "chargeType": "GOVERNMENT",
+        "code": "XF",
+        "country": "US",
+        "salePrice": "USD9.00"
+       },
+       {
+        "kind": "qpxexpress#taxInfo",
+        "id": "ZP",
+        "chargeType": "GOVERNMENT",
+        "code": "ZP",
+        "country": "US",
+        "salePrice": "USD8.00"
+       }
+      ],
+      "fareCalculation": "CHI UA NYC 131.16TAA07AKN UA CHI 131.16TAA07AKN USD 262.32 END ZP ORD LGA XT 19.68US 8.00ZP 11.20AY 9.00XF ORD4.50 LGA4.50",
+      "latestTicketingTime": "2015-05-28T23:59-04:00",
+      "ptc": "ADT"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,171 @@
+<!-- Validation failure messages -->
+
+<% if @search.errors.any? %>
+  <% @search.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<!-- Responsive panel example -->
+
+<div class="row">
+  <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Edit Search #<%= @search.id %></h3>
+      </div>
+      <div class="panel-body">
+        <form action="/update_search/<%= @search.id %>" method="post" class="form-horizontal">
+          <!-- Hidden input for authenticity token to protect from forgery -->
+          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+
+          <!-- Label and input for origin -->
+          <div class="form-group">
+            <label for="origin" class="col-sm-2 control-label">
+              Origin
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="origin" name="origin" placeholder="Origin" class="form-control" value="<%= @search.origin %>">
+            </div>
+          </div>
+
+          <!-- Label and input for destination -->
+          <div class="form-group">
+            <label for="destination" class="col-sm-2 control-label">
+              Destination
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="destination" name="destination" placeholder="Destination" class="form-control" value="<%= @search.destination %>">
+            </div>
+          </div>
+
+          <!-- Label and input for duration -->
+          <div class="form-group">
+            <label for="duration" class="col-sm-2 control-label">
+              Duration
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="duration" name="duration" placeholder="Duration" class="form-control" value="<%= @search.duration %>">
+            </div>
+          </div>
+
+          <!-- Label and input for origin_return -->
+          <div class="form-group">
+            <label for="origin_return" class="col-sm-2 control-label">
+              Origin return
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="origin_return" name="origin_return" placeholder="Origin return" class="form-control" value="<%= @search.origin_return %>">
+            </div>
+          </div>
+
+          <!-- Label and input for destination_return -->
+          <div class="form-group">
+            <label for="destination_return" class="col-sm-2 control-label">
+              Destination return
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="destination_return" name="destination_return" placeholder="Destination return" class="form-control" value="<%= @search.destination_return %>">
+            </div>
+          </div>
+
+          <!-- Label and input for duration_return -->
+          <div class="form-group">
+            <label for="duration_return" class="col-sm-2 control-label">
+              Duration return
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="duration_return" name="duration_return" placeholder="Duration return" class="form-control" value="<%= @search.duration_return %>">
+            </div>
+          </div>
+
+          <!-- Label and input for price -->
+          <div class="form-group">
+            <label for="price" class="col-sm-2 control-label">
+              Price
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="price" name="price" placeholder="Price" class="form-control" value="<%= @search.price %>">
+            </div>
+          </div>
+
+          <!-- Label and input for carrier -->
+          <div class="form-group">
+            <label for="carrier" class="col-sm-2 control-label">
+              Carrier
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="carrier" name="carrier" placeholder="Carrier" class="form-control" value="<%= @search.carrier %>">
+            </div>
+          </div>
+
+          <!-- Label and input for flight_no -->
+          <div class="form-group">
+            <label for="flight_no" class="col-sm-2 control-label">
+              Flight no
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="flight_no" name="flight_no" placeholder="Flight no" class="form-control" value="<%= @search.flight_no %>">
+            </div>
+          </div>
+
+          <!-- Label and input for carrier_return -->
+          <div class="form-group">
+            <label for="carrier_return" class="col-sm-2 control-label">
+              Carrier return
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="carrier_return" name="carrier_return" placeholder="Carrier return" class="form-control" value="<%= @search.carrier_return %>">
+            </div>
+          </div>
+
+          <!-- Label and input for flight_no_return -->
+          <div class="form-group">
+            <label for="flight_no_return" class="col-sm-2 control-label">
+              Flight no return
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="flight_no_return" name="flight_no_return" placeholder="Flight no return" class="form-control" value="<%= @search.flight_no_return %>">
+            </div>
+          </div>
+
+          <!-- Label and input for departure_return_time -->
+          <div class="form-group">
+            <label for="departure_return_time" class="col-sm-2 control-label">
+              Departure return time
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="departure_return_time" name="departure_return_time" placeholder="Departure return time" class="form-control" value="<%= @search.departure_return_time %>">
+            </div>
+          </div>
+
+          <!-- Label and input for departure_time -->
+          <div class="form-group">
+            <label for="departure_time" class="col-sm-2 control-label">
+              Departure time
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="departure_time" name="departure_time" placeholder="Departure time" class="form-control" value="<%= @search.departure_time %>">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button class="btn btn-warning">
+                Update Search
+              </button>
+              or
+              <a href="/searches/<%= @search.id %>">Cancel</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- End responsive panel example -->
