@@ -1,7 +1,5 @@
 class SearchesController < ApplicationController
 
-  require 'Date'
-
   def index
     @searches = Search.all
   end

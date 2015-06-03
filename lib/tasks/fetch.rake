@@ -27,16 +27,16 @@ namespace :fetch do
     # puts price
 
     r_departure_time = to_flight["leg"][0]["departureTime"]
-    date = DateTime.parse(departure_time)
-    f_departure_time = date.strftime('%a %b %d %H:%M:%S %Z %Y')
+    date = DateTime.parse(r_departure_time)
+    f_departure_time = date.strftime('%H:%M:%S %z')
 
-    puts f_departure_time
+    # puts f_departure_time
 
     r_departure_time_return = from_flight["leg"][0]["departureTime"]
-    date = DateTime.parse(departure_time_return)
-    f_departure_time_return = date.strftime('%a %b %d %H:%M:%S %Z %Y')
+    date = DateTime.parse(r_departure_time_return)
+    f_departure_time_return = date.strftime('%H:%M:%S %z')
 
-    puts f_departure_time
+    # puts f_departure_time_return
 
     s = Search.new
     s.carrier = to_flight["flight"]["carrier"]
@@ -51,7 +51,7 @@ namespace :fetch do
     s.origin_return = from_flight["leg"][0]["origin"]
     s.destination_return = from_flight["leg"][0]["destination"]
     s.duration_return = from_flight["leg"][0]["duration"]
-    s.departure_return_time = from_flight["leg"][0]["departureTime"]
+    s.departure_return_time = f_departure_time_return
 
     s.price = price.to_f
 

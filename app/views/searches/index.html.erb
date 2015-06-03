@@ -22,6 +22,8 @@
         <h3 class="panel-title"><%= search.destination %></h3>
       </div>
       <div class="panel-body">
+        <h3 class="panel-title">Outgoing</h3>
+
         <dl>
           <dt>Carrier</dt>
           <dd>
@@ -31,29 +33,31 @@
 
           </dd>
 
-          <dt>Flight no</dt>
+          <dt>Flight Number</dt>
           <dd><%= search.flight_no %></dd>
 
-          <dt>Departure time</dt>
-          <dd><%= @formatted_departure_time %></dd>
+          <dt>Departure Time</dt>
+          <dd><%= search.departure_time %></dd>
 
         </dl>
+
+        <h3 class="panel-title">Returning</h3>
         <dl>
 
-          <dt>Carrier return</dt>
+          <dt>Carrier</dt>
           <dd><%= Carrier.find_by_code(search.carrier_return).name %></dd>
 
-          <dt>Flight no return</dt>
+          <dt>Flight Number</dt>
           <dd><%= search.flight_no_return %></dd>
 
-          <dt>Departure time</dt>
+          <dt>Departure Time</dt>
           <dd><%= search.departure_return_time %></dd>
 
         </dl>
         <dl>
 
 
-          <dt>Price</dt>
+          <h3 class ="panel-title">Price</h3>
           <dd><%= search.price %></dd>
 
         </dl>
