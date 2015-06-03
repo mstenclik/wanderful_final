@@ -1,3 +1,5 @@
+require 'date'
+
 <div class="page-header">
   <h1>
     Cheapest Flights Round Trip from Chicago O'Hare
@@ -37,7 +39,7 @@
           <dd><%= search.flight_no %></dd>
 
           <dt>Departure Time</dt>
-          <dd><%= search.departure_time %></dd>
+          <dd><%= search.departure_time.strftime('%H:%M') %></dd>
 
         </dl>
 
@@ -51,7 +53,7 @@
           <dd><%= search.flight_no_return %></dd>
 
           <dt>Departure Time</dt>
-          <dd><%= search.departure_return_time %></dd>
+          <dd><%= search.departure_return_time.strftime('%H:%M') %></dd>
 
         </dl>
         <dl>

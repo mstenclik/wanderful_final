@@ -28,13 +28,13 @@ namespace :fetch do
 
     r_departure_time = to_flight["leg"][0]["departureTime"]
     date = DateTime.parse(r_departure_time)
-    f_departure_time = date.strftime('%H:%M:%S %z')
+    f_departure_time = date.strftime('%H:%M:%S %:z')
 
     # puts f_departure_time
 
     r_departure_time_return = from_flight["leg"][0]["departureTime"]
     date = DateTime.parse(r_departure_time_return)
-    f_departure_time_return = date.strftime('%H:%M:%S %z')
+    f_departure_time_return = date.strftime('%H:%M:%S %:z')
 
     # puts f_departure_time_return
 
