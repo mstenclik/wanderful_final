@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150603150535) do
+ActiveRecord::Schema.define(version: 20150603151956) do
 
   create_table "carriers", force: :cascade do |t|
     t.string   "code"
@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(version: 20150603150535) do
     t.string   "flight_no"
     t.string   "carrier_return"
     t.string   "flight_no_return"
-    t.time     "departure_return_time"
-    t.time     "departure_time"
+    t.datetime "departure_return_time"
+    t.datetime "departure_time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,8 +1,6 @@
-require 'date'
-
 <div class="page-header">
   <h1>
-    Cheapest Flights Round Trip from Chicago O'Hare
+    Weekend escapes from Chicago for <%= @friday_formatted %> to <%= @sunday_formatted %>
   </h1>
 </div>
 
@@ -24,42 +22,21 @@ require 'date'
         <h3 class="panel-title"><%= search.destination %></h3>
       </div>
       <div class="panel-body">
-        <h3 class="panel-title">Outgoing</h3>
 
         <dl>
-          <dt>Carrier</dt>
-          <dd>
-
-          <%= Carrier.find_by_code(search.carrier).name %>
-
-
-          </dd>
-
-          <dt>Flight Number</dt>
-          <dd><%= search.flight_no %></dd>
-
-          <dt>Departure Time</dt>
-          <dd><%= search.departure_time.strftime('%H:%M') %></dd>
-
-        </dl>
-
-        <h3 class="panel-title">Returning</h3>
-        <dl>
-
-          <dt>Carrier</dt>
-          <dd><%= Carrier.find_by_code(search.carrier_return).name %></dd>
-
-          <dt>Flight Number</dt>
-          <dd><%= search.flight_no_return %></dd>
-
-          <dt>Departure Time</dt>
-          <dd><%= search.departure_return_time.strftime('%H:%M') %></dd>
+          <dt>Leaving</dt>
+          <dd><%= Carrier.find_by_code(search.carrier).name %> Flight <%= search.flight_no %></dd>
+          <dd>Departing at <%= search.departure_time.strftime('%H:%M') %></dd>
 
         </dl>
         <dl>
+          <dt>Returning</dt>
+          <dd><%= Carrier.find_by_code(search.carrier_return).name %> Flight <%= search.flight_no_return %></dd>
+          <dd>Departing at <%= search.departure_return_time.strftime('%H:%M') %></dd>
 
-
-          <h3 class ="panel-title">Price</h3>
+        </dl>
+        <dl>
+          <dt>Price</dt>
           <dd><%= search.price %></dd>
 
         </dl>
@@ -68,12 +45,8 @@ require 'date'
             <i class="fa fa-search-plus"></i>
           </a>
 
-          <a href="/searches/<%= search.id %>/edit" class="btn btn-warning">
-            <i class="fa fa-edit"></i>
-          </a>
-
-          <a href="/delete_search/<%= search.id %>" class="btn btn-danger" rel="nofollow">
-            <i class="fa fa-trash-o"></i>
+          <a href="<%= Carrier.find_by_code(search.carrier_return).url %>" class="btn btn-success">
+            <i class="fa fa-plane"></i>
           </a>
         </div>
       </div>

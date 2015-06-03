@@ -4,7 +4,7 @@
   <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Search #<%= @search.id %></h3>
+        <h3 class="panel-title"><%= @search.destination %></h3>
       </div>
       <div class="panel-body">
         <div class="row">
@@ -16,20 +16,11 @@
               <dt>Destination</dt>
               <dd><%= @search.destination %></dd>
 
+              <dt>Departure time</dt>
+              <dd><%= @search.departure_time %></dd>
+
               <dt>Duration</dt>
               <dd><%= @search.duration %></dd>
-
-              <dt>Origin return</dt>
-              <dd><%= @search.origin_return %></dd>
-
-              <dt>Destination return</dt>
-              <dd><%= @search.destination_return %></dd>
-
-              <dt>Duration return</dt>
-              <dd><%= @search.duration_return %></dd>
-
-              <dt>Price</dt>
-              <dd><%= @search.price %></dd>
 
               <dt>Carrier</dt>
               <dd><%= @search.carrier %></dd>
@@ -37,30 +28,39 @@
               <dt>Flight no</dt>
               <dd><%= @search.flight_no %></dd>
 
+            </dl>
+            <dl class="dl-horizontal">
+
+              <dt>Origin return</dt>
+              <dd><%= @search.origin_return %></dd>
+
+              <dt>Destination return</dt>
+              <dd><%= @search.destination_return %></dd>
+
+              <dt>Departure return time</dt>
+              <dd><%= @search.departure_return_time %></dd>
+
+              <dt>Duration return</dt>
+              <dd><%= @search.duration_return %></dd>
+
               <dt>Carrier return</dt>
               <dd><%= @search.carrier_return %></dd>
 
               <dt>Flight no return</dt>
               <dd><%= @search.flight_no_return %></dd>
 
-              <dt>Departure return time</dt>
-              <dd><%= @search.departure_return_time %></dd>
-
-              <dt>Departure time</dt>
-              <dd><%= @search.departure_time %></dd>
-
+            </dl>
+            <dl class="dl-horizontal">
+              <dt>Price</dt>
+              <dd><%= @search.price %></dd>
             </dl>
             <div class="btn-group btn-group-justified">
               <a href="/searches" class="btn btn-primary">
                 <i class="fa fa-chevron-left"></i>
               </a>
 
-              <a href="/searches/<%= @search.id %>/edit" class="btn btn-warning">
-                <i class="fa fa-edit"></i>
-              </a>
-
-              <a href="/delete_search/<%= @search.id %>" class="btn btn-danger" rel="nofollow">
-                <i class="fa fa-trash-o"></i>
+              <a href="<%= Carrier.find_by_code(@search.carrier_return).url %>" class="btn btn-success">
+              <i class="fa fa-plane"></i>
               </a>
             </div>
           </div>
