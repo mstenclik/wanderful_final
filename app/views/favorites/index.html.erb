@@ -18,37 +18,36 @@
 <div class="row isotope-container">
 <% @favorites.each do |favorite| %>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
+    <% if favorite.user_id == current_user.id  %>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Favorite #<%= favorite.id %></h3>
+        <h3 class="panel-title"><%= favorite.destination.destination %></h3>
       </div>
       <div class="panel-body">
         <dl>
           <dt>User</dt>
-          <dd><%= favorite.user_id %></dd>
-
-          <dt>Destination</dt>
-          <dd><%= favorite.destination_id %></dd>
+          <dd><%= favorite.user.email %></dd>
 
           <dt>Carrier</dt>
-          <dd><%= favorite.carrier_id %></dd>
+          <dd><%= favorite.carrier.name %></dd>
 
         </dl>
         <div class="btn-group btn-group-justified">
-          <a href="/favorites/<%= favorite.id %>" class="btn btn-primary">
-            <i class="fa fa-search-plus"></i>
-          </a>
+            <a href="/favorites/<%= favorite.id %>" class="btn btn-primary">
+              <i class="fa fa-search-plus"></i>
+            </a>
 
-          <a href="/favorites/<%= favorite.id %>/edit" class="btn btn-warning">
-            <i class="fa fa-edit"></i>
-          </a>
+            <a href="/favorites/<%= favorite.id %>/edit" class="btn btn-warning">
+              <i class="fa fa-edit"></i>
+            </a>
 
-          <a href="/delete_favorite/<%= favorite.id %>" class="btn btn-danger" rel="nofollow">
-            <i class="fa fa-trash-o"></i>
-          </a>
+            <a href="/delete_favorite/<%= favorite.id %>" class="btn btn-danger" rel="nofollow">
+              <i class="fa fa-trash-o"></i>
+            </a>
         </div>
       </div>
     </div>
+    <% end %>
   </div>
 <% end %>
 </div>

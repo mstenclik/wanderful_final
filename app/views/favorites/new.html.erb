@@ -25,10 +25,9 @@
           <!-- Label and input for user_id -->
           <div class="form-group">
             <label for="user_id" class="col-sm-2 control-label">
-              User
             </label>
             <div class="col-sm-10">
-              <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= @favorite.user_id %>">
+              <input type="hidden" id="user_id" name="user_id" placeholder="<%= current_user.id %>" class="form-control" value="<%= current_user.id %>">
             </div>
           </div>
 
@@ -38,7 +37,7 @@
               Destination
             </label>
             <div class="col-sm-10">
-              <input type="text" id="destination_id" name="destination_id" placeholder="Destination" class="form-control" value="<%= @favorite.destination_id %>">
+                <%= select_tag(:destination_id, options_from_collection_for_select(Destination.all, :id, :destination, @favorite.destination_id), :class => "form-control")%>
             </div>
           </div>
 
@@ -48,7 +47,7 @@
               Carrier
             </label>
             <div class="col-sm-10">
-              <input type="text" id="carrier_id" name="carrier_id" placeholder="Carrier" class="form-control" value="<%= @favorite.carrier_id %>">
+               <%= select_tag(:carrier_id, options_from_collection_for_select(Carrier.all, :id, :name, @favorite.carrier_id), :class => "form-control")%>
             </div>
           </div>
 

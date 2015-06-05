@@ -26,13 +26,13 @@
         <dl>
           <dt>Leaving</dt>
           <dd><%= Carrier.find_by_code(search.carrier).name %> Flight <%= search.flight_no %></dd>
-          <dd>Departing at <%= search.departure_time.strftime('%H:%M') %></dd>
+          <dd>Departing at <%= search.departure_time.strftime('%-H:%M') %></dd>
 
         </dl>
         <dl>
           <dt>Returning</dt>
           <dd><%= Carrier.find_by_code(search.carrier_return).name %> Flight <%= search.flight_no_return %></dd>
-          <dd>Departing at <%= search.departure_return_time.strftime('%H:%M') %></dd>
+          <dd>Departing at <%= search.departure_return_time.strftime('%-H:%M') %></dd>
 
         </dl>
         <dl>

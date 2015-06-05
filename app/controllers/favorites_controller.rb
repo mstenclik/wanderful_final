@@ -1,4 +1,12 @@
 class FavoritesController < ApplicationController
+
+  def check_if_owner
+    favorite = Favorite.find(params[:id])
+    if favorite.user_id != current_user.id
+      redirect_to "/favorites", notice: "Can only view your favorites"
+    end
+  end
+
   def index
     @favorites = Favorite.all
   end

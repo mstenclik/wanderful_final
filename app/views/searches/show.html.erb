@@ -10,48 +10,53 @@
         <div class="row">
           <div class="col-md-12">
             <dl class="dl-horizontal">
-              <dt>Origin</dt>
+              <dt class="panel-title" style="text-align: left">Leaving</dt>
+              <dd></dd>
+
+              <dt style="text-align: left">Origin</dt>
               <dd><%= @search.origin %></dd>
 
-              <dt>Destination</dt>
+              <dt style="text-align: left">Destination</dt>
               <dd><%= @search.destination %></dd>
 
-              <dt>Departure time</dt>
-              <dd><%= @search.departure_time %></dd>
+              <dt style="text-align: left">Departure time</dt>
+              <dd><%= @search.departure_time.strftime('%-H:%M') %></dd>
 
-              <dt>Duration</dt>
-              <dd><%= @search.duration %></dd>
+              <dt style="text-align: left">Duration</dt>
+              <dd><%= @search.duration %> minutes</dd>
 
-              <dt>Carrier</dt>
-              <dd><%= @search.carrier %></dd>
+              <dt style="text-align: left">Carrier</dt>
+              <dd><%= Carrier.find_by_code(@search.carrier).name %></dd>
 
-              <dt>Flight no</dt>
+              <dt style="text-align: left">Flight no</dt>
               <dd><%= @search.flight_no %></dd>
 
             </dl>
             <dl class="dl-horizontal">
+              <dt class="panel-title" style="text-align: left">Returning</dt>
+              <dd></dd>
 
-              <dt>Origin return</dt>
+              <dt style="text-align: left">Origin</dt>
               <dd><%= @search.origin_return %></dd>
 
-              <dt>Destination return</dt>
+              <dt style="text-align: left">Destination</dt>
               <dd><%= @search.destination_return %></dd>
 
-              <dt>Departure return time</dt>
-              <dd><%= @search.departure_return_time %></dd>
+              <dt style="text-align: left">Departure Time</dt>
+              <dd><%= @search.departure_return_time.strftime('%-H:%M') %></dd>
 
-              <dt>Duration return</dt>
-              <dd><%= @search.duration_return %></dd>
+              <dt style="text-align: left">Duration</dt>
+              <dd><%= @search.duration_return %> minutes </dd>
 
-              <dt>Carrier return</dt>
-              <dd><%= @search.carrier_return %></dd>
+              <dt style="text-align: left">Carrier</dt>
+              <dd><%= Carrier.find_by_code(@search.carrier).name %></dd>
 
-              <dt>Flight no return</dt>
+              <dt style="text-align: left">Flight no</dt>
               <dd><%= @search.flight_no_return %></dd>
 
             </dl>
             <dl class="dl-horizontal">
-              <dt>Price</dt>
+              <dt style="text-align: left">Price</dt>
               <dd><%= @search.price %></dd>
             </dl>
             <div class="btn-group btn-group-justified">
