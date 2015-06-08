@@ -16,51 +16,50 @@ namespace :fetch do
 
     # pp results["trips"]["tripOption"]["kind".to_i]["slice"].count
 
-    to_flight = results["trips"]["tripOption"][0]["slice"][0]["segment"][0]
-    from_flight = results["trips"]["tripOption"][0]["slice"][1]["segment"][0]
-    price = results["trips"]["tripOption"][0]["saleTotal"].delete("USD")
+        to_flight = results["trips"]["tripOption"][0]["slice"][0]["segment"][0]
+        from_flight = results["trips"]["tripOption"][0]["slice"][1]["segment"][0]
+        price = results["trips"]["tripOption"][0]["saleTotal"].delete("USD")
 
-    # puts to_flight.inspect
-    # puts
-    # puts from_flight.inspect
-    # puts
-    # puts price
+        # puts to_flight.inspect
+        # puts
+        # puts from_flight.inspect
+        # puts
+        # puts price
 
-    r_departure_time = to_flight["leg"][0]["departureTime"]
-    date = DateTime.parse(r_departure_time)
-    c_departure_time = date.strftime('%H:%M').to_time - date.strftime('%:z').delete("-").to_i.hours
-    f_departure_time = date.strftime('%Y/%m/%d') + " " + c_departure_time.strftime('%H:%M:%S')
+        r_departure_time = to_flight["leg"][0]["departureTime"]
+        date = DateTime.parse(r_departure_time)
+        c_departure_time = date.strftime('%H:%M').to_time - date.strftime('%:z').delete("-").to_i.hours
+        f_departure_time = date.strftime('%Y/%m/%d') + " " + c_departure_time.strftime('%H:%M:%S')
 
-    # puts f_departure_time
+        # puts f_departure_time
 
-    r_departure_time_return = from_flight["leg"][0]["departureTime"]
-    date = DateTime.parse(r_departure_time_return)
-    c_departure_time_return = date.strftime('%H:%M').to_time - date.strftime('%:z').delete("-").to_i.hours
-    f_departure_time_return = date.strftime('%Y/%m/%d') + " " + c_departure_time_return.strftime('%H:%M:%S')
+        r_departure_time_return = from_flight["leg"][0]["departureTime"]
+        date = DateTime.parse(r_departure_time_return)
+        c_departure_time_return = date.strftime('%H:%M').to_time - date.strftime('%:z').delete("-").to_i.hours
+        f_departure_time_return = date.strftime('%Y/%m/%d') + " " + c_departure_time_return.strftime('%H:%M:%S')
 
-    # puts f_departure_time_return
+        # puts f_departure_time_return
 
-    s = Search.new
-    s.carrier = to_flight["flight"]["carrier"]
-    s.flight_no = to_flight["flight"]["number"]
-    s.origin = to_flight["leg"][0]["origin"]
-    s.destination = to_flight["leg"][0]["destination"]
-    s.duration = to_flight["leg"][0]["duration"]
-    s.departure_time = f_departure_time
+        s = Search.new
+        s.carrier = to_flight["flight"]["carrier"]
+        s.flight_no = to_flight["flight"]["number"]
+        s.origin = to_flight["leg"][0]["origin"]
+        s.destination = to_flight["leg"][0]["destination"]
+        s.duration = to_flight["leg"][0]["duration"]
+        s.departure_time = f_departure_time
 
-    s.carrier_return = from_flight["flight"]["carrier"]
-    s.flight_no_return = from_flight["flight"]["number"]
-    s.origin_return = from_flight["leg"][0]["origin"]
-    s.destination_return = from_flight["leg"][0]["destination"]
-    s.duration_return = from_flight["leg"][0]["duration"]
-    s.departure_return_time = f_departure_time_return
+        s.carrier_return = from_flight["flight"]["carrier"]
+        s.flight_no_return = from_flight["flight"]["number"]
+        s.origin_return = from_flight["leg"][0]["origin"]
+        s.destination_return = from_flight["leg"][0]["destination"]
+        s.duration_return = from_flight["leg"][0]["duration"]
+        s.departure_return_time = f_departure_time_return
 
-    s.price = price.to_f
+        s.price = price.to_f
 
-    s.save
+        s.save
 
-    puts "#{s.carrier} No. #{s.flight_no} from #{s.origin} to #{s.destination} for #{s.price} saved"
-
+        puts "#{s.carrier} No. #{s.flight_no} from #{s.origin} to #{s.destination} for #{s.price} saved"
 
 
     # class Partay
