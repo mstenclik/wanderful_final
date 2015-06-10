@@ -21,7 +21,7 @@ class FavoritesController < ApplicationController
 
   def create
     @favorite = Favorite.new
-    @favorite.user_id = params[:user_id]
+    @favorite.user_id = current_user.id
     @favorite.destination_id = params[:destination_id]
     @favorite.carrier_id = params[:carrier_id]
 
@@ -39,7 +39,7 @@ class FavoritesController < ApplicationController
   def update
     @favorite = Favorite.find(params[:id])
 
-    @favorite.user_id = params[:user_id]
+    @favorite.user_id = current_user.id
     @favorite.destination_id = params[:destination_id]
     @favorite.carrier_id = params[:carrier_id]
 
@@ -55,6 +55,6 @@ class FavoritesController < ApplicationController
 
     @favorite.destroy
 
-    redirect_to "/favorites", :notice => "Favorite deleted."
+    redirect_to "/favorites", :notice => "Route deleted."
   end
 end

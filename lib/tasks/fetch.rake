@@ -87,14 +87,14 @@ namespace :fetch do
 #   }
 # }
 
-# result = HTTParty.post('https://www.googleapis.com/qpxExpress/v1/trips/search?key=AIzaSyC_DUAzo9utpNjb-5WHeOahZyKcIwyLnpk',
+# result = HTTParty.post('https://www.googleapis.com/qpxExpress/v1/trips/search?key=',
 #     :headers => { 'Content-Type' => 'application/json', 'payload' => options.to_json } )
 
 # pp result
 
-    # pp Partay.post('https://www.googleapis.com/qpxExpress/v1/trips/search?key=AIzaSyC_DUAzo9utpNjb-5WHeOahZyKcIwyLnpk', options)
+    # pp Partay.post('https://www.googleapis.com/qpxExpress/v1/trips/search?key=', options)
 
-    # response = RestClient.post "https://www.googleapis.com/qpxExpress/v1/trips/search?key=AIzaSyC_DUAzo9utpNjb-5WHeOahZyKcIwyLnpk",
+    # response = RestClient.post "https://www.googleapis.com/qpxExpress/v1/trips/search?key=",
     #              {
     #                request: {
     #                  passengers: {

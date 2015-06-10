@@ -1,40 +1,42 @@
 Rails.application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   devise_for :users
   root 'searches#index'
 
   # Routes for the Carrier resource:
   # CREATE
-  get "/carriers/new", :controller => "carriers", :action => "new"
-  post "/create_carrier", :controller => "carriers", :action => "create"
+  # get "/carriers/new", :controller => "carriers", :action => "new"
+  # post "/create_carrier", :controller => "carriers", :action => "create"
 
-  # READ
-  get "/carriers", :controller => "carriers", :action => "index"
-  get "/carriers/:id", :controller => "carriers", :action => "show"
+  # # READ
+  # get "/carriers", :controller => "carriers", :action => "index"
+  # get "/carriers/:id", :controller => "carriers", :action => "show"
 
-  # UPDATE
-  get "/carriers/:id/edit", :controller => "carriers", :action => "edit"
-  post "/update_carrier/:id", :controller => "carriers", :action => "update"
+  # # UPDATE
+  # get "/carriers/:id/edit", :controller => "carriers", :action => "edit"
+  # post "/update_carrier/:id", :controller => "carriers", :action => "update"
 
-  # DELETE
-  get "/delete_carrier/:id", :controller => "carriers", :action => "destroy"
+  # # DELETE
+  # get "/delete_carrier/:id", :controller => "carriers", :action => "destroy"
   #------------------------------
 
   # Routes for the Destination resource:
   # CREATE
-  get "/destinations/new", :controller => "destinations", :action => "new"
-  post "/create_destination", :controller => "destinations", :action => "create"
+  # get "/destinations/new", :controller => "destinations", :action => "new"
+  # post "/create_destination", :controller => "destinations", :action => "create"
 
-  # READ
-  get "/destinations", :controller => "destinations", :action => "index"
-  get "/destinations/:id", :controller => "destinations", :action => "show"
+  # # READ
+  # get "/destinations", :controller => "destinations", :action => "index"
+  # get "/destinations/:id", :controller => "destinations", :action => "show"
 
-  # UPDATE
-  get "/destinations/:id/edit", :controller => "destinations", :action => "edit"
-  post "/update_destination/:id", :controller => "destinations", :action => "update"
+  # # UPDATE
+  # get "/destinations/:id/edit", :controller => "destinations", :action => "edit"
+  # post "/update_destination/:id", :controller => "destinations", :action => "update"
 
-  # DELETE
-  get "/delete_destination/:id", :controller => "destinations", :action => "destroy"
+  # # DELETE
+  # get "/delete_destination/:id", :controller => "destinations", :action => "destroy"
   #------------------------------
 
   # Routes for the Favorite resource:
